@@ -1,0 +1,358 @@
+/* ~~~~~ */
+/* Fonts */
+/* ~~~~~ */
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("font-awesome/css/font-awesome.css");
+
+/* ~~~~~ */
+/* Resets */
+/* ~~~~~ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+  display: block;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+blockquote, q{
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after{
+  content: '';
+  content: none;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ~~~~~~~~~~~~~~~ */
+/* Global styles */
+/* ~~~~~~~~~~~~~~~ */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url("images/bg.png") fixed no-repeat center;
+  color: #222222;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ~~~~~~~~~~~~~~~ */
+/* Layouts */
+/* ~~~~~~~~~~~~~~~ */
+
+#wrapper{
+  width: 800px;
+  margin: 30px auto;
+}
+
+  #wrapper .header{
+    background: rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  	-webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+    #wrapper .header .logo{
+      padding: 50px 0 30px 0;
+    }
+
+      #wrapper .header .logo h1{
+        font-family: "Lato", sans-serif;
+        font-size: 80px;
+        font-weight: 700;
+      }
+
+      #wrapper .header .logo a{
+        color: #222222;
+      }
+
+      #wrapper .header .logo a:hover{
+        color: #A7DB24;
+      }
+
+    #wrapper .header .menu{
+      padding: 20px 0px;
+      font-size: 0;
+      overflow: auto;
+    }
+
+      #wrapper .header .menu ul{
+        list-style-type: none;
+      }
+
+        #wrapper .header .menu ul li{
+          display: inline-block;
+        }
+
+          #wrapper .header .menu ul li a{
+            font-family: "Lato", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 20px;
+            color: #222222;
+          }
+
+          #wrapper .header .menu ul li a:hover{
+            color: #A7DB24;
+          }
+
+          #wrapper .header .menu ul li a.active{
+            color: #A7DB24;
+          }
+
+  #wrapper .content{
+    margin: 30px 0;
+    background: rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    line-height: 30px;
+  }
+
+    #wrapper .content h1{ font-family: "Lato", sans-serif;  font-size: 30px;  font-weight: 700;}
+    #wrapper .content h2{ font-family: "Lato", sans-serif;  font-size: 24px;  font-weight: 700;}
+    #wrapper .content h6{ font-family: "Lato", sans-serif;  font-size: 16px;  font-weight: 400;}
+    #wrapper .content p{  font-family: "Lato", sans-serif;  font-size: 16px;  font-weight: 300;}
+    #wrapper .content a{ color: #A7DB24;}
+    #wrapper .content a:hover{ color: #222222;}
+
+    /* Begin homepage */
+
+    #wrapper .content .about{
+      padding: 0;
+      overflow: auto;
+      text-align: center;
+      border-bottom: 1px solid #CCC;
+    }
+
+      #wrapper .content .about .panel{
+        width: 340px;
+        padding: 30px;
+        float: left;
+      }
+
+      #wrapper .content .about .panel .fa{
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+        font-size: 100px;
+        background: #111;
+        color: #A7DB24;
+      }
+
+      #wrapper .content .about h1{
+        text-transform: uppercase;
+        color: #A7DB24;
+        padding: 30px 0;
+      }
+
+      #wrapper .content .headlines{
+        padding: 30px;
+        border-bottom: 1px solid #CCC;
+      }
+
+        #wrapper .content .headlines h1{
+          text-transform: uppercase;
+          color: #A7DB24;
+        }
+
+        #wrapper .content .article{
+          padding: 30px 0 0 0;
+        }
+
+          #wrapper .content .headlines .article h6{
+            padding: 15px 0;
+          }
+
+            #wrapper .content .headlines .article h6 span{
+              color: #A7DB24;
+            }
+
+      #wrapper .content .feed{
+        padding: 30px 0;
+        overflow: auto;
+      }
+
+        #wrapper .content .feed .panel{
+          width: 340px;
+          padding: 0 30px;
+          float: left;
+        }
+
+    /* End homepage */
+
+    /* Begin news */
+
+    #wrapper .content .news{
+      padding: 0;
+    }
+
+      #wrapper .content .news .article{
+        padding: 30px;
+        border-bottom: 1px solid #CCC;
+      }
+
+        #wrapper .content .news .article h6{
+          padding: 15px 0;
+        }
+
+          #wrapper .content .news .article h6 span{
+            color: #A7DB24;
+          }
+
+    /* End news */
+
+    /* Begin servers */
+
+    #wrapper .content .servers{
+      padding: 0;
+    }
+
+      #wrapper .content .servers h1{
+        padding: 30px;
+      }
+
+      #wrapper .content .servers .server{
+        padding: 30px;
+        border-top: 1px solid #CCC;
+      }
+
+        #wrapper .content .servers .server h2{
+          padding: 0 0 15px 0;
+        }
+
+          #wrapper .content .servers .server h2 .server_game{
+            color: #A7DB24;
+          }
+
+          #wrapper .content .servers .server p .server_info{
+            color: #A7DB24;
+          }
+
+          #wrapper .content .servers .server p .server_owner{
+            color: #FF0000;
+          }
+
+          #wrapper .content .servers .server p .server_admin{
+            color: #0000FF;
+          }
+
+    /* End servers */
+
+    /* Begin contact */
+
+    #wrapper .content .contact{
+      padding: 30px;
+    }
+
+      #wrapper .content .contact h1{
+        padding: 0 0 30px 0;
+      }
+
+      #wrapper .content .contact .input{
+      	width: 200px;
+      	padding: 5px;
+      	margin: 5px 0;
+      	display: block;
+      	font-family: "Lato", sans-serif;
+        font-size: 16px;
+      }
+
+      #wrapper .content .contact .textarea{
+      	width: 500px;
+      	height: 100px;
+      	padding: 5px;
+      	margin: 5px 0;
+      	display: block;
+      	font-family: "Lato", sans-serif;
+        font-size: 16px;
+      }
+
+      #wrapper .content .contact .button{
+      	width: 100px;
+      	padding: 5px;
+      	border: 1px solid #CCC;
+      	border-radius: 50px;
+      	display: block;
+      	font-family: "Lato", sans-serif;
+      	font-size: 16px;
+      }
+
+    /* End contact */
+
+  #wrapper .footer{
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+    #wrapper .footer p{ font-family: "Lato", sans-serif; font-size: 18px; font-weight: 400;}
+    #wrapper .footer a{ color: #A7DB24;}
+    #wrapper .footer a:hover{ color: #222222;}
+
+/* Begin responsive styles */
+
+@media screen  and (max-width: 768px){
+  #wrapper{
+    width: 700px;
+  }
+
+      #wrapper .content .about .panel{
+        width: 290px;
+        padding: 30px;
+      }
+}
+
+@media screen and (max-width: 425px){
+  #wrapper{
+    width: 400px;
+  }
+
+      #wrapper .content .about .panel{
+        width: 340px;
+        padding: 30px;
+        float: left;
+      }
+}
+
+/* End responsive styles */

@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>weezy's blog &bull; Home</title>
-  <link href="styles.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-  <script type="text/javascript" src="active.js"></script>
-</head>
-<body>
-  <div id="wrapper">
-    <div class="header">
-      <div class="logo">
-        <h1><a href="index.html">weezy<span style="color: #1ABC9C;">'</span>s blog</a></h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CraftSE &bull; Home</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="active.js"></script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="wrapper">
+      <div class="header">
+        <div class="logo">
+          <h1><a href="index.html">Craft<span style="color: #A7DB24;">SE</span></a></h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="forums.html">Forums</a></li>
+            <li><a href="servers.html">Servers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="content">
+        <div class="about">
+          <div class="panel">
+            <span class="fa fa-hand-paper-o"></span>
+            <h1>Welcome</h1>
+            <p>Welcome to <a href="index.html">CraftSE</a>! Make an account and start playing on our <a href="servers.html">servers</a>.</p>
+          </div>
+          <div class="panel">
+            <span class="fa fa-gamepad"></span>
+            <h1>Play</h1>
+            <p>You're welcome to play and meet new people on our 24/7 online <a href="servers.html">servers</a>!</p>
+          </div>
+        </div>
+        <div class="headlines">
+          <h1>Latest article</h1>
+          <div class="article">
+            <h2>CraftSE is now LIVE!</h2>
+            <h6><span class="fa fa-clock-o"></span> Jan 1st, 2017 &bull; <span class="fa fa-user"></span> wallensteiN &bull; <span class="fa fa-comments"></span> Comments</h6>
+            <p>After a long waiting, the international Minecraft community, CraftSE, is officially opened! Everyone is welcome to play on our servers and have fun. For the moment the community is run by me, wallensteiN. Any feedback is greatly appreciated on our <a href="forums.html">forums</a> or on our <a href="contact.html">contact</a> page. That being <a href="article.html">[...]</a></p>
+          </div>
+        </div>
+        <div class="feed">
+          <div class="panel">
+            <div class="fb-page" data-href="https://www.facebook.com/minecraft" data-tabs="timeline" data-width="340" data-height="340" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/minecraft"><a href="https://www.facebook.com/minecraft">Minecraft</a></blockquote></div></div>
+          </div>
+          <div class="panel" style="width: 340px;">
+            <a class="twitter-timeline" href="https://twitter.com/Minecraft" data-widget-id="719250856311459840">Tweets av @Minecraft</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy; <a href="index.html">MC COMMUNITY</a> &bull; 2015 - 2016. Interface designed and coded by <a href="http://wallenstein.me">wallensteiN</a>.</p>
       </div>
     </div>
-    <div class="content">
-      <div class="article">
-        <h1><a href="article.html">A few updates</a></h1>
-        <h6><span style="color: #A7DB24;" class="fa fa-clock-o"></span> Sep 14th, 2015 &bull; <span style="color: #A7DB24;" class="fa fa-user"></span> weezy &bull;  <span style="color: #A7DB24;" class="fa fa-comments"></span> Comments (2)</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="article">
-        <h1><a href="article.html">Analyzing this week's pro games</a></h1>
-        <h6><span style="color: #A7DB24;" class="fa fa-clock-o"></span> Sep 9th, 2015 &bull; <span style="color: #A7DB24;" class="fa fa-user"></span> weezy &bull;  <span style="color: #A7DB24;" class="fa fa-comments"></span> Comments (<a href="article.html#comments">3</a>)</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="article">
-        <h1><a href="article.html">Welcome to my blog!</a></h1>
-        <h6><span style="color: #A7DB24;" class="fa fa-clock-o"></span> Sep 7th, 2015 &bull; <span style="color: #A7DB24;" class="fa fa-user"></span> weezy &bull;  <span style="color: #A7DB24;" class="fa fa-comments"></span> Comments (1)</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-    <div class="footer">
-      <p class="social"><a href="http://facebook.com" class="fa fa-facebook"></a> &bull; <a href="http://twitter.com" class="fa fa-twitter"></a> &bull; <a href="http://plus.google.com" class="fa fa-google-plus"></a></p>
-      <p>&copy; <a href="index.html">weezy.me</a> &bull; 2015. Interface designed and coded by <a href="http://wallenstein.me">wallensteiN</a>.</p>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
-
